@@ -8,7 +8,7 @@
 </head>
 <body class="bg-light">
     <div class="container mt-5">
-        <h1 class="text-center">Sinhala Spell & Grammer Checker</h1>
+        <h1 class="text-center">Sinhala Spell Checker</h1>
         <form id="spell-check-form" class="mt-4">
             <div class="mb-3">
                 <label for="text" class="form-label">Enter your text:</label>
@@ -20,7 +20,9 @@
         <!-- Result Section -->
         <div id="results" class="mt-4">
             <h3>Results</h3>
-            <textarea id="misspelled-words" class="form-control" rows="10" style="width: 100%; background: #ffffff;"></textarea>
+            <div id="misspelled-words" class="border p-3 bg-white">
+                <!-- Misspelled words and suggestions will be displayed here -->
+            </div>
         </div>
     </div>
 
@@ -41,17 +43,22 @@
                         const misspelledWords = data.misspelled;
                         const suggestions = data.suggestions;
 
-                        let resultText = '';
+                        let resultHTML = '';
                         if (misspelledWords.length > 0) {
+                            resultHTML += '<ul class="list-group">';
                             misspelledWords.forEach(word => {
-                                resultText += `Word: ${word}\nSuggestions: ${suggestions[word].join(', ')}\n\n`;
+                                resultHTML += <li class="list-group-item">
+                                    <strong>${word}</strong> 
+                                    Suggestions: ${suggestions[word].join(', ')}
+                                </li>;
                             });
+                            resultHTML += '</ul>';
                         } else {
-                            resultText = 'No spelling errors detected!';
+                            resultHTML = '<p class="text-success">No spelling errors detected!</p>';
                         }
 
-                        // Display the results in the textarea
-                        $('#misspelled-words').val(resultText);
+                        // Display the results in the results container
+                        $('#misspelled-words').html(resultHTML);
                     },
                     error: function () {
                         alert("Error in checking spelling.");
