@@ -1,18 +1,24 @@
-# Sinhala Grammar Correction System
+# 🌐 Sinhala Grammar Correction System
 
-This repository contains a rule-based Sinhala grammar correction system that analyzes a dataset of correct Sinhala sentences, generates grammatical rules, and applies them to correct user inputs.
+This repository contains a **rule-based Sinhala grammar correction system** that analyzes a dataset of correct Sinhala sentences, generates grammatical rules, and applies them to correct user inputs. 📝✨
 
-## Features
-- Extracts rules from a dataset of grammatically correct Sinhala sentences.
-- Tokenizes and analyzes patterns (word frequencies and bigrams).
-- Applies the extracted rules to correct user-entered paragraphs interactively.
+---
 
-## How It Works
-1. **Dataset**: The system uses a dataset containing only correct Sinhala sentences (e.g., `grammerRule1.txt`).
-2. **Rule Generation**: Analyzes tokenized sentences to identify word frequencies and bigram patterns.
-3. **User Input**: Accepts a Sinhala paragraph from the user and applies the generated rules to provide corrections.
+## ✨ Features
+- 📜 **Extracts rules** from a dataset of grammatically correct Sinhala sentences.
+- 🧩 **Tokenizes and analyzes patterns** (word frequencies and bigrams).
+- 🤖 **Interactive corrections**: Applies the extracted rules to correct user-entered Sinhala paragraphs.
 
-## Usage
+---
+
+## ⚙️ How It Works
+1. **📁 Dataset**: The system uses a dataset containing only correct Sinhala sentences (e.g., `grammerRule1.txt`).
+2. **🛠️ Rule Generation**: Analyzes tokenized sentences to identify word frequencies and bigram patterns.
+3. **🖊️ User Input**: Accepts a Sinhala paragraph from the user and applies the generated rules to provide corrections.
+
+---
+
+## 🚀 Usage
 1. Place your dataset file (`grammerRule1.txt`) in the project directory.
 2. Run the script:
    ```bash
