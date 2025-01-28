@@ -27,7 +27,7 @@ This repository contains a **rule-based Sinhala grammar correction system** that
 3. Enter a Sinhala paragraph when prompted.
 4. The corrected paragraph will be displayed.
 
-## Dataset Format
+## 📄Dataset Format
 - The dataset should contain only correct Sinhala sentences, one sentence per line.
 - Example:
   ```
@@ -35,7 +35,7 @@ This repository contains a **rule-based Sinhala grammar correction system** that
   අපි ගමේ වෙළඳසැලට ගියා.
   ```
 
-## Requirements
+## 🛠️Requirements
 - Python 3.7+
 - Required libraries: `re`, `collections`, `sklearn`
 
