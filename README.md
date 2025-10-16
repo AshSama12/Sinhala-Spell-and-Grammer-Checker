@@ -35,14 +35,7 @@ This repository contains a **rule-based Sinhala grammar correction system** that
   අපි ගමේ වෙළඳසැලට ගියා.
   ```
 
-## 🛠️Requirements
-- Python 3.7+
-- Required libraries: `re`, `collections`, `sklearn`
 
-Install dependencies using:
-```bash
-pip install -r requirements.txt
-```
 
 ## Project Structure
 ```
